@@ -32,7 +32,7 @@ requirements:
     - pydantic
     - python >=3.6
     - python-libsbml ==5.19.0
-    - rich >=8.0
+    - rich <=8.0
     - ruamel.yaml >=0.16
     - six
     - swiglpk
