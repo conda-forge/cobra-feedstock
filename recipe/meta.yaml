@@ -1,5 +1,5 @@
 {% set name = "cobra" %}
-{% set version = "0.22.0" %}
+{% set version = "0.22.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cobra-{{ version }}.tar.gz
-  sha256: 10b6c477f2a4a6f950969e66e6c41649bfd756f94df2ddd8b48999b5502a4c0a
+  sha256: 25f2d669b30ec74b309fadbe1b321abee31e7cae9e889b3199ccca93e9cd8e52
 
 build:
   number: 0
@@ -53,13 +53,8 @@ about:
   license_family: GPL
   license_file: LICENSE
   description: >
-    Constraint-based reconstruction and analysis (COBRA) methods are widely used
-    for genome-scale modeling of metabolic networks in both prokaryotes and
-    eukaryotes. COBRApy is a constraint-based modeling package that is designed
-    to accommodate the biological complexity of the next generation of COBRA
-    models and provides access to commonly used COBRA methods, such as
-    flux-balance analysis, flux variability analysis, and gene deletion
-    analyses.
+    Constraint-based reconstruction and analysis (COBRA) methods are widely used for genome-scale modeling of metabolic networks in both prokaryotes and eukaryotes. COBRApy is a constraint-based modeling package that is designed to accommodate the biological complexity of the next generation of COBRA models and provides
+    access to commonly used COBRA methods, such as flux-balance analysis, flux variability analysis, and gene deletion analyses.
   doc_url: https://cobrapy.readthedocs.io
   dev_url: https://github.com/opencobra/cobrapy
 
