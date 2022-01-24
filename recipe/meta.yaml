@@ -31,7 +31,7 @@ requirements:
     - pandas >=1.0
     - pydantic >=1.6
     - python >=3.6
-    - python-libsbml ==5.19.0
+    - python-libsbml ==5.19.2
     - rich >=8.0
     - ruamel.yaml >=0.16
     - six
