@@ -1,5 +1,5 @@
 {% set name = "cobra" %}
-{% set version = "0.22.1" %}
+{% set version = "0.23.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cobra-{{ version }}.tar.gz
-  sha256: 25f2d669b30ec74b309fadbe1b321abee31e7cae9e889b3199ccca93e9cd8e52
+  sha256: f5ff00fe53e1cda92ca03535f249b005627b910cddf49fbc5d57f6ebe8633e4c
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
@@ -21,7 +21,7 @@ requirements:
     - python >=3.6
   run:
     - appdirs
-    - depinfo
+    - depinfo >=1.7
     - diskcache
     - future
     - httpx
@@ -31,7 +31,7 @@ requirements:
     - pandas >=1.0
     - pydantic >=1.6
     - python >=3.6
-    - python-libsbml ==5.19.0
+    - python-libsbml ==5.19.2
     - rich >=8.0
     - ruamel.yaml >=0.16
     - six
