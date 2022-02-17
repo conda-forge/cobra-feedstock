@@ -1,5 +1,5 @@
 {% set name = "cobra" %}
-{% set version = "0.23.0" %}
+{% set version = "0.24.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cobra-{{ version }}.tar.gz
-  sha256: f5ff00fe53e1cda92ca03535f249b005627b910cddf49fbc5d57f6ebe8633e4c
+  sha256: f790a3a298e3f94bdfe71e7968f80cf3e834628d2752b15ef556bb17af30a3e6
 
 build:
   number: 0
