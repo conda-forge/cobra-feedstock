@@ -11,7 +11,7 @@ source:
   sha256: 851d60dcfdfa65bc58cdbf582158095b20c8be4d8fb153a088ad7a8cff40ee2e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
@@ -21,7 +21,7 @@ requirements:
     - python >=3.6
   run:
     - appdirs
-    - depinfo >=1.7
+    - depinfo =1.7
     - diskcache
     - future
     - httpx
