@@ -26,7 +26,7 @@ requirements:
     - future
     - httpx
     - importlib_resources
-    - numpy >=1.13
+    - numpy >=1.13,<1.24
     - optlang >=1.5.1
     - pandas >=1.0
     - pydantic >=1.6
