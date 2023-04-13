@@ -1,5 +1,5 @@
 {% set name = "cobra" %}
-{% set version = "0.26.2" %}
+{% set version = "0.26.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cobra-{{ version }}.tar.gz
-  sha256: 71f7274ebe3732fd89ce48da3fcfd69d4a43ccf28b274fbea912e813ad72ecda
+  sha256: 69c768c452777c13efc4d068460812af93ba6dee7b75d4c0c6c3ddee27f6b598
 
 build:
   number: 0
@@ -24,11 +24,11 @@ requirements:
     - depinfo =1.7
     - diskcache
     - future
-    - httpx
+    - httpx >=0.24.0
     - importlib_resources
     - numpy >=1.13,<1.24
     - optlang >=1.5.1
-    - pandas >=1.0
+    - pandas >=1.0,<2.0
     - pydantic >=1.6
     - python >=3.6
     - python-libsbml ==5.19.2

@@ -1,11 +1,11 @@
-About cobra
-===========
+About cobra-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cobra-feedstock/blob/main/LICENSE.txt)
 
 Home: https://opencobra.github.io/cobrapy
 
 Package license: LGPL-2.0-or-later OR GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cobra-feedstock/blob/main/LICENSE.txt)
 
 Summary: COBRApy is a package for constraints-based modeling of metabolic networks.
 
