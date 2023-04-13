@@ -24,7 +24,7 @@ requirements:
     - depinfo =1.7
     - diskcache
     - future
-    - httpx>=0.24.0
+    - httpx >=0.24.0
     - importlib_resources
     - numpy >=1.13,<1.24
     - optlang >=1.5.1
