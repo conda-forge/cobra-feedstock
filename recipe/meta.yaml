@@ -1,5 +1,5 @@
 {% set name = "cobra" %}
-{% set version = "0.27.0" %}
+{% set version = "0.28.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cobra-{{ version }}.tar.gz
-  sha256: 06fda37f689f527d121244938ca44b10d66cda4ce535a7bfdca6a0a6f7d286b7
+  sha256: 49cfe0f4b2bb281d7398c43d037f88ea687c788714676c32ccb76c911e3d0367
 
 build:
   number: 0
@@ -18,23 +18,22 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
     - appdirs
-    - depinfo =1.7
+    - depinfo >=2.2
     - diskcache
     - future
     - httpx >=0.24.0
     - importlib_resources
-    - numpy >=1.13,<1.24
+    - numpy >=1.13
     - optlang >=1.5.1
-    - pandas >=1.0,<2.0
+    - pandas >=1.0
     - pydantic >=1.6
-    - python >=3.6
-    - python-libsbml ==5.19.2
+    - python >=3.8
+    - python-libsbml >=5.19
     - rich >=8.0
     - ruamel.yaml >=0.16
-    - six
     - swiglpk
 
 test:
