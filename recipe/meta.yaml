@@ -7,18 +7,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cobra-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cobra-{{ version }}.tar.gz
   sha256: 47cd4fe80eb329ed75ccfb7ecbaac6275e986685392d52922bc8ad3cbc599674
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
   run:
     - appdirs
@@ -31,7 +31,7 @@ requirements:
     - optlang >=1.5.1
     - pandas >=1.0
     - pydantic >=1.6
-    - python >=3.8
+    - python >={{ python_min }}
     - python-libsbml >=5.19
     - rich >=8.0
     - ruamel.yaml >=0.16
@@ -45,6 +45,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://opencobra.github.io/cobrapy
