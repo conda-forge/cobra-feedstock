@@ -23,13 +23,12 @@ requirements:
   run:
     - appdirs
     - depinfo >=2.2
-    - diskcache
     - future
     - httpx >=0.24.0
     - importlib_resources
     - numpy >=1.13
-    - optlang >=1.5.1
-    - pandas >=1.0
+    - optlang >=1.9.0
+    - pandas >=1.0,<3.0
     - pydantic >=1.6
     - python >={{ python_min }}
     - python-libsbml >=5.19
